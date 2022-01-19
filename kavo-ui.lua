@@ -1950,7 +1950,7 @@ function Kavo.CreateLib(kavName, themeList)
                         if a.KeyCode.Name ~= "Unknown" then
                             togName_2.Text = a.KeyCode.Name
                             oldKey = a.KeyCode.Name;
-                            _G.key = a.KeyCode.Name
+                            _G.key = a.KeyCode
                         end
                         local c = sample:Clone()
                         c.Parent = keybindElement
