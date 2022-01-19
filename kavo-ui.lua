@@ -1911,7 +1911,7 @@ function Kavo.CreateLib(kavName, themeList)
                 end
                 return DropFunction
             end
-            function Elements:NewKeybind(keytext, keyinf, first, isMenuClosingKey, callback)
+            function Elements:NewKeybind(keytext, keyinf, first, callback)
                 keytext = keytext or "KeybindText"
                 keyinf = keyinf or "KeybindInfo"
                 callback = callback or function() end
@@ -1950,7 +1950,6 @@ function Kavo.CreateLib(kavName, themeList)
                         if a.KeyCode.Name ~= "Unknown" then
                             togName_2.Text = a.KeyCode.Name
                             oldKey = a.KeyCode.Name;
-                            _G.key = a.KeyCode
                         end
                         local c = sample:Clone()
                         c.Parent = keybindElement
